@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "InvestmentsTracker": {
+    "Investfolio": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
