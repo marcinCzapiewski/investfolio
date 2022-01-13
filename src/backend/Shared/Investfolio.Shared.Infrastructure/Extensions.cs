@@ -1,4 +1,5 @@
 ﻿using Investfolio.Shared.Infrastructure.Api;
+using Investfolio.Shared.Infrastructure.Exceptions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using System.Runtime.CompilerServices;
@@ -10,6 +11,7 @@ namespace Investfolio.Shared.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
+            services.AddErrorHandling();
             services.AddControllers()
                 .ConfigureApplicationPartManager(manager =>
                 {
@@ -21,6 +23,7 @@ namespace Investfolio.Shared.Infrastructure
 
         public static WebApplication UseInfrastructure(this WebApplication webApp)
         {
+            webApp.UseErrorHandling();
             webApp.UseRouting();
             webApp.MapControllers();
 
