@@ -5,9 +5,19 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Investfolio.Bootstrapper", "Bootstrapper\Investfolio.Bootstrapper.csproj", "{587F9979-AD90-4291-A99A-7853E0E1E8D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investfolio.Shared.Infrastructure", "Shared\Investfolio.Shared.Infrastructure\Investfolio.Shared.Infrastructure.csproj", "{4194E7E8-BFA5-4EBF-BEAB-337AFB84783C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Investfolio.Shared.Infrastructure", "Shared\Investfolio.Shared.Infrastructure\Investfolio.Shared.Infrastructure.csproj", "{4194E7E8-BFA5-4EBF-BEAB-337AFB84783C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investoflio.Shared.Abstractions", "Shared\Investfolio.Shared.Abstractions\Investoflio.Shared.Abstractions.csproj", "{673EAE06-29D7-4113-92B9-1741BFDAA791}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Investoflio.Shared.Abstractions", "Shared\Investfolio.Shared.Abstractions\Investoflio.Shared.Abstractions.csproj", "{673EAE06-29D7-4113-92B9-1741BFDAA791}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Investfolio.Modules.Quotes.Api", "Modules\Quotes\Investfolio.Modules.Quotes.Api\Investfolio.Modules.Quotes.Api.csproj", "{3D6E3C37-260B-4100-AE87-E1E432E16CA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{227DE9A1-C0C7-460C-849A-E098EC5DD295}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{3F7DB562-CA6B-4D94-956A-4C1353D5F3D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Quotes", "Quotes", "{F5B07A9C-7EE7-4540-80CD-F4CC398E6AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investfolio.Modules.Quotes.Core", "Modules\Quotes\Investfolio.Modules.Quotes.Core\Investfolio.Modules.Quotes.Core.csproj", "{96BC2B3F-34DB-4890-A0AE-2EF81B9E7384}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +37,24 @@ Global
 		{673EAE06-29D7-4113-92B9-1741BFDAA791}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{673EAE06-29D7-4113-92B9-1741BFDAA791}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{673EAE06-29D7-4113-92B9-1741BFDAA791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6E3C37-260B-4100-AE87-E1E432E16CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6E3C37-260B-4100-AE87-E1E432E16CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6E3C37-260B-4100-AE87-E1E432E16CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6E3C37-260B-4100-AE87-E1E432E16CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96BC2B3F-34DB-4890-A0AE-2EF81B9E7384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96BC2B3F-34DB-4890-A0AE-2EF81B9E7384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96BC2B3F-34DB-4890-A0AE-2EF81B9E7384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96BC2B3F-34DB-4890-A0AE-2EF81B9E7384}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4194E7E8-BFA5-4EBF-BEAB-337AFB84783C} = {227DE9A1-C0C7-460C-849A-E098EC5DD295}
+		{673EAE06-29D7-4113-92B9-1741BFDAA791} = {227DE9A1-C0C7-460C-849A-E098EC5DD295}
+		{3D6E3C37-260B-4100-AE87-E1E432E16CA9} = {F5B07A9C-7EE7-4540-80CD-F4CC398E6AFA}
+		{F5B07A9C-7EE7-4540-80CD-F4CC398E6AFA} = {3F7DB562-CA6B-4D94-956A-4C1353D5F3D3}
+		{96BC2B3F-34DB-4890-A0AE-2EF81B9E7384} = {F5B07A9C-7EE7-4540-80CD-F4CC398E6AFA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FC30EA2-7562-4062-BC2F-96496724759D}

@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Modules\Quotes\Investfolio.Modules.Quotes.Api\Investfolio.Modules.Quotes.Api.csproj" />
     <ProjectReference Include="..\Shared\Investfolio.Shared.Abstractions\Investoflio.Shared.Abstractions.csproj" />
     <ProjectReference Include="..\Shared\Investfolio.Shared.Infrastructure\Investfolio.Shared.Infrastructure.csproj" />
   </ItemGroup>

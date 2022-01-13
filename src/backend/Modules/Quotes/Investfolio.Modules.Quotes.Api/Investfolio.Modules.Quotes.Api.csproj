@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Investfolio.Shared.Abstractions\Investoflio.Shared.Abstractions.csproj" />
+    <ProjectReference Include="..\Investfolio.Modules.Quotes.Core\Investfolio.Modules.Quotes.Core.csproj" />
   </ItemGroup>
 
 </Project>
